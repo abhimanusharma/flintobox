@@ -1,0 +1,10 @@
+$fontsizecontent:0.90em;
+$fontweightcontent:400;
+$lineheightcontent:2em;
+$linkfontsize:0.71em;
+
+@media (max-width:768px) {
+  .hidden-xs {
+    display: none
+  }
+}

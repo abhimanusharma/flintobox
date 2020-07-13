@@ -1,0 +1,9 @@
+@import '../../app.component.scss';
+
+.image-content-section {
+  p {
+    font-size: $fontsizecontent;
+    font-weight: $fontweightcontent;
+    line-height: $lineheightcontent;
+  }
+}
