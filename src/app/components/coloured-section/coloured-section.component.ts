@@ -8,6 +8,7 @@ import { Input, Component, OnInit } from '@angular/core';
 export class ColouredSectionComponent implements OnInit {
   @Input() heading: string;
   @Input() content: string;
+  @Input() colorClass: string;
 
   constructor() { }
 
