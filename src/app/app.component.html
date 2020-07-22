@@ -9,13 +9,26 @@
 
 <body>
   <app-navbar></app-navbar>
-  <app-coloured-section [heading]="heading1" [content]="content1"></app-coloured-section>
-  <section class="s-2 grey lighten-5">
+  <app-coloured-section [colorClass]="color1" [heading]="heading1">
+  </app-coloured-section>
+  <section class="s-2 grey lighten-4">
     <div class="container">
       <app-video-content-section></app-video-content-section>
       <app-image-content-section></app-image-content-section>
+      <app-call-to-action></app-call-to-action>
     </div>
   </section>
+  <app-seal-content></app-seal-content>
+  <app-themes-section></app-themes-section>
+  <app-coloured-section [colorClass]="color1" [heading]="heading2"></app-coloured-section>
+  <app-subscription-section></app-subscription-section>
+  <app-awards></app-awards>
+  <app-faq></app-faq>
+  <app-call-to-action></app-call-to-action>
+  <app-coloured-section [colorClass]="color1" [heading]="heading3"></app-coloured-section>
+  <app-featured></app-featured>
+  <app-call-to-action></app-call-to-action>
+  <app-footer></app-footer>
 </body>
 
 </html>

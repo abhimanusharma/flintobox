@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-call-to-action',
@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./call-to-action.component.scss']
 })
 export class CallToActionComponent implements OnInit {
+  public innerWidth: any;
+  public size: string;
 
-  constructor() { }
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.innerWidth = event.target.innerWidth;
+    this.innerWidth < 767 ? this.size = 'sm' : this.size = 'lg';
+  }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.innerWidth = window.innerWidth;
+    this.innerWidth < 767 ? this.size = 'sm' : this.size = 'lg';
   }
 
 }
