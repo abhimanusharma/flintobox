@@ -17,9 +17,13 @@ import { VideoModalComponent } from './components/video-modal/video-modal.compon
 import { SubscriptionSectionComponent } from './components/subscription-section/subscription-section.component';
 import { CallbackModalComponent } from './components/callback-modal/callback-modal.component';
 import { AwardsComponent } from './components/awards/awards.component';
+import { AwardSliderComponent } from './components/award-slider/award-slider.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { FeaturedComponent } from './components/featured/featured.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, ColouredSectionComponent, VideoContentSectionComponent, ImageContentSectionComponent, CallToActionComponent, SealContentComponent, ThemesSectionComponent, VideoModalComponent, SubscriptionSectionComponent, CallbackModalComponent, AwardsComponent],
+  declarations: [AppComponent, NavbarComponent, ColouredSectionComponent, VideoContentSectionComponent, ImageContentSectionComponent, CallToActionComponent, SealContentComponent, ThemesSectionComponent, VideoModalComponent, SubscriptionSectionComponent, CallbackModalComponent, AwardsComponent, AwardSliderComponent, FaqComponent, FeaturedComponent, FooterComponent],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,

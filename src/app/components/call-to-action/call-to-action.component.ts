@@ -7,13 +7,20 @@ import { Component, OnInit, HostListener } from '@angular/core';
 })
 export class CallToActionComponent implements OnInit {
   public innerWidth: any;
+  public size: string;
+
   @HostListener('window:resize', ['$event'])
   onResize(event) {
     this.innerWidth = event.target.innerWidth;
+    this.innerWidth < 767 ? this.size = 'sm' : this.size = 'lg';
   }
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.innerWidth = window.innerWidth;
+    this.innerWidth < 767 ? this.size = 'sm' : this.size = 'lg';
   }
 
 }

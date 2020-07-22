@@ -15,6 +15,48 @@ mdb-navbar .navbar.navbar-light .navbar-toggler-icon {
   background-size: 65%;
 }
 
+.carousel-indicators {
+  display: none;
+}
+
+.faq-section .card {
+  background-color: transparent;
+}
+
+.faq-section {
+  .accordion.md-accordion {
+    background-color: #fff !important;
+    border-radius: 20px;
+
+    .card {
+      .card-header {
+        a[aria-expanded="false"] {
+          color: #555;
+        }
+
+        a[aria-expanded="true"] {
+          color: #000;
+        }
+
+        span {
+          font-size: 0.89rem;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+
+.featured .carousel .carousel-control-next-icon {
+  margin-right: -75% !important;
+}
+
+.featured .carousel .carousel-control-prev-icon {
+  margin-left: -75% !important;
+}
+
+
 @media (max-width:768px) {
   .pt-sm-4 {
     padding-top: 1.5rem;
